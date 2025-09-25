@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "boilerplate-angular20": {
+    "umbandario-angular": {
       "projectType": "application",
       "schematics": {
         "@schematics/angular:component": {
@@ -56,10 +56,10 @@
           "builder": "@angular/build:dev-server",
           "configurations": {
             "production": {
-              "buildTarget": "boilerplate-angular20:build:production"
+              "buildTarget": "umbandario-angular:build:production"
             },
             "development": {
-              "buildTarget": "boilerplate-angular20:build:development"
+              "buildTarget": "umbandario-angular:build:development"
             }
           },
           "defaultConfiguration": "development"
