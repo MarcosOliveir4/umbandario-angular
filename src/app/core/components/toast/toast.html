@@ -1,0 +1,11 @@
+<div data-testid="toast" class="toast toast-end toast-top z-50">
+  @for (toast of toastService.toasts(); track toast.id) {
+    <div
+      class="alert shadow-lg cursor-pointer transition-all duration-300"
+      [ngClass]="getAlertClass(toast)"
+      (click)="toastService.remove(toast.id)"
+    >
+      <span class="text-sm font-medium">{{ toast.message }}</span>
+    </div>
+  }
+</div>
